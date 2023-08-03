@@ -1,3 +1,4 @@
+[![Laravel](https://github.com/mycoding-academy/livewire-organization-crud-demo/actions/workflows/laravel.yml/badge.svg)](https://github.com/mycoding-academy/livewire-organization-crud-demo/actions/workflows/laravel.yml)
 
 ## About Application
 Laravel application to domonstrate Livewire CRUD using Bootstrap Modal. This can be starter kit for intranet service application which requires basic employees and organization units management.
