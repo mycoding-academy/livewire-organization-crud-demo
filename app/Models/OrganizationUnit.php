@@ -23,4 +23,17 @@ class OrganizationUnit extends Model
             ->withTimestamps();
     }
 
+    public function getNavigationPath()
+    {
+        $nodes = Self::ancestorsAndSelf($this->id);
+        $path = collect($nodes)->map(function($node){
+            $obj = new \stdClass();
+            $obj->unit_id = $node->id;
+            $obj->name = $node->name;
+            
+            return $obj;
+        });
+        
+        return $path;
+    }
 }
