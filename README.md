@@ -13,6 +13,14 @@ Laravel application to domonstrate Livewire CRUD using Bootstrap Modal. This can
   ```
   composer install
   ```
+- Create .env
+  ```
+  cp .env.example .env
+  ```
+- generate APP_KEY to .env
+  ```
+  php artisan key:generate
+  ```
 - Install Node packages.
   ```
   npm install
@@ -29,9 +37,13 @@ Laravel application to domonstrate Livewire CRUD using Bootstrap Modal. This can
   ```
   php artisan serve
   ```
-  And run Vite in other termial.
+- And run Vite in other termial.
   ```
   npm run dev
+  ```
+- Or You want production mode
+  ```
+  npm run build
   ```
 
 ## Learning Laravel
