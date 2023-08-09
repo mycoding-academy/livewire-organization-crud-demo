@@ -15,6 +15,7 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @livewireStyles
 </head>
 <body>
     <div id="app">
@@ -30,7 +31,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('unit-directory') }}">{{ __('Directory') }}</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -76,5 +79,6 @@
             @yield('content')
         </main>
     </div>
+    @livewireScripts
 </body>
 </html>
