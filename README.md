@@ -1,3 +1,7 @@
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+
+<p align="center">
+
 [![Laravel](https://github.com/mycoding-academy/livewire-organization-crud-demo/actions/workflows/laravel.yml/badge.svg)](https://github.com/mycoding-academy/livewire-organization-crud-demo/actions/workflows/laravel.yml)
 
 ## About Application
@@ -12,6 +16,14 @@ Laravel application to domonstrate Livewire CRUD using Bootstrap Modal. This can
 - Install PHP packages.
   ```
   composer install
+  ```
+- Create .env
+  ```
+  cp .env.example .env
+  ```
+- generate APP_KEY to .env
+  ```
+  php artisan key:generate
   ```
 - Install Node packages.
   ```
@@ -29,9 +41,13 @@ Laravel application to domonstrate Livewire CRUD using Bootstrap Modal. This can
   ```
   php artisan serve
   ```
-  And run Vite in other termial.
+- And run Vite in other termial.
   ```
   npm run dev
+  ```
+- Or You want production mode
+  ```
+  npm run build
   ```
 
 ## Learning Laravel
