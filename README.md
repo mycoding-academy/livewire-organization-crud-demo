@@ -9,22 +9,38 @@ Laravel application to domonstrate Livewire CRUD using Bootstrap Modal. This can
 
 ## How to run the application
 - Clone this repository.
+ ```
+    git clone https://github.com/mycoding-academy/livewire-organization-crud-demo
+  ```
 - Change directory to the application folder.
-- Copy .env.example to .env file.
-- Create your database and put related information in the .env file.
-- Edit first user data in the .env file.
+  ```
+    cd livewire-organization-crud-demo
+  ```
 - Install PHP packages.
   ```
   composer install
   ```
-- Create .env
+- Create .env file by copying .env.example to .env file.
   ```
   cp .env.example .env
   ```
-- generate APP_KEY to .env
+- Generate API key (and store in .env file).
   ```
   php artisan key:generate
   ```
+- Create your database and put related information in the .env file.
+  ```
+  DB_DATABASE=livewire_organization_crud_demo
+  DB_USERNAME=root
+  DB_PASSWORD=
+  ```
+- Edit first user data in the .env file. Default password is 'password'
+```
+  INITIAL_USER_FIRST_NAME=John
+  INITIAL_USER_LAST_NAME=Doe
+  INITIAL_USER_EMAIL=john.doe@gmail.com
+  INITIAL_USER_PASSWORD_HASH=$2y$10$j/hxwdJcdKeoo4s6YyYUBeTQfnpQD1A1pbKM8fn9i7aUNIKbJebsC # password
+```
 - Install Node packages.
   ```
   npm install
@@ -61,7 +77,7 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Thank you for considering contributing to the application! We follow the contribution guide from Larvale which can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
 ## Code of Conduct
 
@@ -69,7 +85,7 @@ In order to ensure that the Laravel community is welcoming to all, please review
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this application, please send an e-mail to Prasit Gebsaap via [prasit.gebsaap@gmail.com](mailto:prasit.gebsaap@gmail.com). All security vulnerabilities will be promptly addressed.
 
 ## License
 
